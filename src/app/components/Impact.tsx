@@ -7,10 +7,10 @@ type ImpactProps = {
 
 export function Impact({ mode = "home" }: ImpactProps) {
   const stats = [
-    { number: "500+", label: "Scholarships Awarded", trend: "+120 this year" },
-    { number: "50+", label: "Schools Supported", trend: "+8 this year" },
-    { number: "10,000+", label: "Lives Impacted", trend: "+2,500 this year" },
-    { number: "$2M+", label: "Aid Distributed", trend: "+$500K this year" },
+    { number: "10+", label: "Scholarships Awarded", trend: "+50 this year" },
+    { number: "12+", label: "Schools Supported", trend: "+4 this year" },
+    { number: "100+", label: "Lives Impacted", trend: "+250 this year" },
+    { number: "$2k+", label: "Aid Distributed", trend: "+$5K this year" },
   ];
 
   const isPage = mode === "page";

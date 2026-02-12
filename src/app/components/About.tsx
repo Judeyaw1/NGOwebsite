@@ -32,7 +32,7 @@ export function About({ mode = "home" }: AboutProps) {
       icon: Award,
       title: "Our Impact",
       description:
-        "Over 500 scholarships awarded, 50+ schools supported, and thousands of lives transformed through education and aid programs.",
+        "Over 10 scholarships awarded, 10+ schools supported, and thousands of lives transformed through education and aid programs.",
     },
   ];
 
@@ -109,15 +109,15 @@ export function About({ mode = "home" }: AboutProps) {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="rounded-xl bg-white border border-gray-200 p-4 text-center">
-                <p className="text-2xl font-bold text-gray-900">500+</p>
+                <p className="text-2xl font-bold text-gray-900">50+</p>
                 <p className="text-xs text-gray-600">Scholarships</p>
               </div>
               <div className="rounded-xl bg-white border border-gray-200 p-4 text-center">
-                <p className="text-2xl font-bold text-gray-900">50+</p>
+                <p className="text-2xl font-bold text-gray-900">5+</p>
                 <p className="text-xs text-gray-600">Schools Supported</p>
               </div>
               <div className="rounded-xl bg-white border border-gray-200 p-4 text-center">
-                <p className="text-2xl font-bold text-gray-900">8+</p>
+                <p className="text-2xl font-bold text-gray-900">2+</p>
                 <p className="text-xs text-gray-600">Years of Impact</p>
               </div>
             </div>

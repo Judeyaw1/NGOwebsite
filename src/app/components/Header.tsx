@@ -35,7 +35,7 @@ export function Header() {
             <a href="/contact" className="text-gray-700 hover:text-black transition-colors">
               Contact
             </a>
-            <a href="/donate" className="px-6 py-2.5 bg-yellow-400 hover:bg-yellow-500 text-white font-semibold rounded-lg transition-colors">
+            <a href="/donate" className="px-6 py-2.5 bg-yellow-400 hover:bg-yellow-500 text-white hover:text-white visited:text-white font-semibold rounded-lg transition-colors">
               Donate Now
             </a>
           </nav>
@@ -93,7 +93,7 @@ export function Header() {
             >
               Contact
             </a>
-            <a href="/donate" className="block text-center w-full px-6 py-2.5 bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-semibold rounded-lg transition-colors">
+            <a href="/donate" className="block text-center w-full px-6 py-2.5 bg-yellow-400 hover:bg-yellow-500 text-white hover:text-white visited:text-white font-semibold rounded-lg transition-colors">
               Donate Now
             </a>
           </div>

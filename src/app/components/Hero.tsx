@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[calc(100vh-4rem)] sm:min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
@@ -15,7 +15,7 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         <div className="max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -33,7 +33,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6"
+            className="text-3xl sm:text-5xl lg:text-7xl font-bold text-white mb-6"
           >
             Empowering Nigerian Communities Through Education
           </motion.h1>
@@ -42,7 +42,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl text-gray-200 mb-8 leading-relaxed"
+            className="text-base sm:text-xl text-gray-200 mb-8 leading-relaxed"
           >
             National Ladies of Enugu State Association (OELOFSA) - A women-owned NGO dedicated to providing scholarships, educational
             resources, and humanitarian aid to local communities in Nigeria. Together,
@@ -55,11 +55,11 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <a href="/donate" className="px-8 py-4 bg-yellow-400 hover:bg-yellow-500 text-white font-semibold rounded-lg flex items-center justify-center gap-2 transition-colors">
+            <a href="/donate" className="w-full sm:w-auto px-8 py-4 bg-yellow-400 hover:bg-yellow-500 text-white font-semibold rounded-lg flex items-center justify-center gap-2 transition-colors text-sm sm:text-base">
               Support Our Cause
               <ArrowRight className="w-5 h-5" />
             </a>
-            <a href="/about" className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm border border-white/30 rounded-lg transition-colors">
+            <a href="/about" className="w-full sm:w-auto text-center px-8 py-4 bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm border border-white/30 rounded-lg transition-colors text-sm sm:text-base">
               Learn More
             </a>
           </motion.div>
@@ -71,7 +71,7 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        className="hidden md:block absolute bottom-8 left-1/2 -translate-x-1/2"
       >
         <div className="w-6 h-10 border-2 border-white/30 rounded-full flex items-start justify-center p-2">
           <motion.div

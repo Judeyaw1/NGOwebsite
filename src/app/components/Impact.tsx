@@ -30,7 +30,7 @@ export function Impact({ mode = "home" }: ImpactProps) {
   ];
 
   return (
-    <section id="impact" className="py-20 bg-black relative overflow-hidden">
+    <section id="impact" className="py-14 sm:py-20 bg-black relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
@@ -45,10 +45,10 @@ export function Impact({ mode = "home" }: ImpactProps) {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Our Impact in Numbers
           </h2>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-base sm:text-xl text-blue-100 max-w-3xl mx-auto">
             Real results from our commitment to transforming lives through education
             and community support.
           </p>
@@ -62,10 +62,10 @@ export function Impact({ mode = "home" }: ImpactProps) {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-xl text-center"
+              className="bg-white/10 backdrop-blur-sm border border-white/20 p-6 sm:p-8 rounded-xl text-center"
             >
-              <p className="text-5xl font-bold text-white mb-2">{stat.number}</p>
-              <p className="text-blue-100 mb-3 text-lg">{stat.label}</p>
+              <p className="text-4xl sm:text-5xl font-bold text-white mb-2">{stat.number}</p>
+              <p className="text-blue-100 mb-3 text-base sm:text-lg">{stat.label}</p>
               <div className="flex items-center justify-center gap-1 text-sm text-yellow-300">
                 <TrendingUp className="w-4 h-4" />
                 <span>{stat.trend}</span>
@@ -83,10 +83,10 @@ export function Impact({ mode = "home" }: ImpactProps) {
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-3xl font-bold text-white mb-4">
+              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
                 Building Sustainable Futures
               </h3>
-              <p className="text-blue-100 text-lg leading-relaxed">
+              <p className="text-blue-100 text-base sm:text-lg leading-relaxed">
                 Every scholarship awarded, every school improved, and every family
                 supported creates a ripple effect of positive change. Our graduates
                 are now teachers, healthcare workers, engineers, and community
@@ -118,8 +118,8 @@ export function Impact({ mode = "home" }: ImpactProps) {
 
         {isPage && (
           <div className="mt-16 grid lg:grid-cols-2 gap-8">
-            <div className="bg-white text-gray-900 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold mb-5">This Year’s Highlights</h3>
+            <div className="bg-white text-gray-900 rounded-2xl p-6 sm:p-8">
+              <h3 className="text-xl sm:text-2xl font-bold mb-5">This Year’s Highlights</h3>
               <div className="space-y-4">
                 {yearlyHighlights.map((item) => (
                   <div key={item} className="flex items-start gap-3">
@@ -130,8 +130,8 @@ export function Impact({ mode = "home" }: ImpactProps) {
               </div>
             </div>
 
-            <div className="bg-yellow-400 text-gray-900 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold mb-5">How We Measure Impact</h3>
+            <div className="bg-yellow-400 text-gray-900 rounded-2xl p-6 sm:p-8">
+              <h3 className="text-xl sm:text-2xl font-bold mb-5">How We Measure Impact</h3>
               <div className="space-y-4">
                 {measurementPrinciples.map((item, idx) => (
                   <div key={item} className="flex items-start gap-3">
@@ -145,7 +145,7 @@ export function Impact({ mode = "home" }: ImpactProps) {
 
               <a
                 href="/#contact"
-                className="inline-block mt-8 px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-black transition-colors"
+                className="inline-block mt-8 w-full sm:w-auto text-center px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-black transition-colors"
               >
                 Request Full Impact Report
               </a>

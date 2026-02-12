@@ -114,7 +114,7 @@ export function Footer() {
             </ul>
 
             {/* Social Links */}
-            <div className="flex gap-3">
+            <div className="flex flex-wrap gap-3">
               <a
                 href="#"
                 className="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-yellow-400 hover:text-blue-900 transition-colors"
@@ -149,7 +149,7 @@ export function Footer() {
             <p className="text-gray-400">
               © {currentYear} OELOFSA. All rights reserved | JoseSolution.
             </p>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">
                 Privacy Policy
               </a>

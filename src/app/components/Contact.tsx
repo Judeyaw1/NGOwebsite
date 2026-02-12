@@ -35,20 +35,20 @@ export function Contact({ mode = "home" }: ContactProps) {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-white border-t border-gray-100">
+    <section id="contact" className="py-14 sm:py-20 bg-white border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {isPage && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="rounded-3xl bg-gradient-to-br from-slate-900 via-blue-900 to-cyan-900 text-white p-8 md:p-12 mb-10"
+            className="rounded-3xl bg-gradient-to-br from-slate-900 via-blue-900 to-cyan-900 text-white p-6 sm:p-8 md:p-12 mb-10"
           >
             <p className="text-xs uppercase tracking-[0.2em] text-cyan-200 mb-4">Contact</p>
-            <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
               Let’s Build Community Impact Together
             </h2>
-            <p className="text-blue-100 max-w-3xl text-lg leading-relaxed">
+            <p className="text-blue-100 max-w-3xl text-base sm:text-lg leading-relaxed">
               Reach out for scholarships, partnership opportunities, sponsorships, or
               volunteering. Our team is ready to collaborate.
             </p>
@@ -62,8 +62,8 @@ export function Contact({ mode = "home" }: ContactProps) {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+          <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto">
             Have questions or want to learn more about our work? We'd love to hear
             from you.
           </p>
@@ -130,13 +130,13 @@ export function Contact({ mode = "home" }: ContactProps) {
               <p className="text-gray-600 text-sm mb-4">
                 Stay updated on our latest programs and success stories.
               </p>
-              <div className="flex gap-2">
+              <div className="flex flex-col sm:flex-row gap-2">
                 <input
                   type="email"
                   placeholder="Your email address"
                   className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
-                <button className="px-6 py-2 bg-yellow-400 hover:bg-yellow-500 text-white font-semibold rounded-lg transition-colors">
+                <button className="w-full sm:w-auto px-6 py-2 bg-yellow-400 hover:bg-yellow-500 text-white font-semibold rounded-lg transition-colors">
                   Subscribe
                 </button>
               </div>
@@ -163,7 +163,7 @@ export function Contact({ mode = "home" }: ContactProps) {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="bg-gray-50 p-8 rounded-2xl border border-gray-100"
+            className="bg-gray-50 p-6 sm:p-8 rounded-2xl border border-gray-100"
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>

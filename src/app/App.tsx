@@ -21,27 +21,27 @@ export default function App() {
     <div className="min-h-screen bg-white">
       <Header />
       {isAboutPage ? (
-        <main className="pt-20">
+        <main className="pt-16 sm:pt-20">
           <About mode="page" />
         </main>
       ) : isProgramsPage ? (
-        <main className="pt-20">
+        <main className="pt-16 sm:pt-20">
           <Programs mode="page" />
         </main>
       ) : isImpactPage ? (
-        <main className="pt-20">
+        <main className="pt-16 sm:pt-20">
           <Impact mode="page" />
         </main>
       ) : isStoriesPage ? (
-        <main className="pt-20">
+        <main className="pt-16 sm:pt-20">
           <Stories mode="page" />
         </main>
       ) : isContactPage ? (
-        <main className="pt-20">
+        <main className="pt-16 sm:pt-20">
           <Contact mode="page" />
         </main>
       ) : isDonatePage ? (
-        <main className="pt-20">
+        <main className="pt-16 sm:pt-20">
           <Donate />
         </main>
       ) : (

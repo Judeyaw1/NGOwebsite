@@ -93,7 +93,7 @@ export function Programs({ mode = "home" }: ProgramsProps) {
   ];
 
   return (
-    <section id="programs" className="py-20 bg-white border-t border-gray-100">
+    <section id="programs" className="py-14 sm:py-20 bg-white border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {!isPage && (
           <>
@@ -104,8 +104,8 @@ export function Programs({ mode = "home" }: ProgramsProps) {
               viewport={{ once: true }}
               className="text-center mb-16"
             >
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Programs</h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Our Programs</h2>
+              <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto">
                 Comprehensive initiatives designed to create lasting change in Nigerian
                 communities through education, aid, and empowerment.
               </p>
@@ -119,7 +119,7 @@ export function Programs({ mode = "home" }: ProgramsProps) {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-gray-50 p-8 rounded-xl hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200"
+                  className="bg-gray-50 p-6 sm:p-8 rounded-xl hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200"
                 >
                   <div
                     className={`w-14 h-14 ${
@@ -151,31 +151,31 @@ export function Programs({ mode = "home" }: ProgramsProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
-              className="rounded-3xl bg-gradient-to-br from-slate-900 via-blue-950 to-cyan-900 text-white p-8 md:p-12 mb-10"
+              className="rounded-3xl bg-gradient-to-br from-slate-900 via-blue-950 to-cyan-900 text-white p-6 sm:p-8 md:p-12 mb-10"
             >
               <p className="text-xs uppercase tracking-[0.2em] text-cyan-200 mb-4">Programs</p>
-              <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
                 Practical Programs That Move Communities Forward
               </h2>
-              <p className="text-blue-100 max-w-3xl text-lg leading-relaxed">
+              <p className="text-blue-100 max-w-3xl text-base sm:text-lg leading-relaxed">
                 Each OELOFSA program is designed with local stakeholders, delivered through
                 trusted partnerships, and measured for real outcomes.
               </p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-8">
                 <div className="rounded-xl bg-white/10 border border-white/20 p-4">
-                  <p className="text-2xl font-bold">500+</p>
+                  <p className="text-xl sm:text-2xl font-bold">500+</p>
                   <p className="text-xs text-blue-100">Scholarships</p>
                 </div>
                 <div className="rounded-xl bg-white/10 border border-white/20 p-4">
-                  <p className="text-2xl font-bold">50+</p>
+                  <p className="text-xl sm:text-2xl font-bold">50+</p>
                   <p className="text-xs text-blue-100">Schools Supported</p>
                 </div>
                 <div className="rounded-xl bg-white/10 border border-white/20 p-4">
-                  <p className="text-2xl font-bold">10,000+</p>
+                  <p className="text-xl sm:text-2xl font-bold">10,000+</p>
                   <p className="text-xs text-blue-100">Families Reached</p>
                 </div>
                 <div className="rounded-xl bg-white/10 border border-white/20 p-4">
-                  <p className="text-2xl font-bold">1,000+</p>
+                  <p className="text-xl sm:text-2xl font-bold">1,000+</p>
                   <p className="text-xs text-blue-100">Youth Trained</p>
                 </div>
               </div>
@@ -186,10 +186,10 @@ export function Programs({ mode = "home" }: ProgramsProps) {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="lg:col-span-7 rounded-2xl border border-emerald-200 bg-emerald-50 p-8"
+                className="lg:col-span-7 rounded-2xl border border-emerald-200 bg-emerald-50 p-6 sm:p-8"
               >
                 <p className="text-emerald-700 text-sm font-semibold mb-3">Flagship Track</p>
-                <h3 className="text-3xl font-bold text-gray-900 mb-3">{featuredProgram.title}</h3>
+                <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">{featuredProgram.title}</h3>
                 <p className="text-gray-700 leading-relaxed mb-6">{featuredProgram.description}</p>
                 <div className="inline-flex items-center rounded-full bg-white border border-emerald-200 px-4 py-2 text-sm font-semibold text-emerald-700">
                   {featuredProgram.stats}
@@ -200,7 +200,7 @@ export function Programs({ mode = "home" }: ProgramsProps) {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="lg:col-span-5 rounded-2xl border border-gray-200 bg-white p-8"
+                className="lg:col-span-5 rounded-2xl border border-gray-200 bg-white p-6 sm:p-8"
               >
                 <h4 className="text-xl font-bold text-gray-900 mb-5">How Programs Are Delivered</h4>
                 <div className="space-y-4">
@@ -216,7 +216,7 @@ export function Programs({ mode = "home" }: ProgramsProps) {
               </motion.div>
             </div>
 
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">All Program Tracks</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">All Program Tracks</h3>
             <div className="grid md:grid-cols-2 gap-6 mb-12">
               {otherPrograms.map((program, index) => (
                 <motion.div
@@ -246,8 +246,8 @@ export function Programs({ mode = "home" }: ProgramsProps) {
             </div>
 
             <div className="grid lg:grid-cols-2 gap-8 mb-12">
-              <div className="bg-slate-900 rounded-2xl p-8 text-white">
-                <h3 className="text-2xl font-bold mb-5">Expected Outcomes</h3>
+              <div className="bg-slate-900 rounded-2xl p-6 sm:p-8 text-white">
+                <h3 className="text-xl sm:text-2xl font-bold mb-5">Expected Outcomes</h3>
                 <div className="space-y-4">
                   {outcomes.map((item) => (
                     <div key={item} className="flex gap-3 items-start">
@@ -258,8 +258,8 @@ export function Programs({ mode = "home" }: ProgramsProps) {
                 </div>
               </div>
 
-              <div className="rounded-2xl bg-yellow-400 p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">Support A Program Track</h3>
+              <div className="rounded-2xl bg-yellow-400 p-6 sm:p-8">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Support A Program Track</h3>
                 <p className="text-gray-800 mb-6">
                   Sponsor a focused intervention and help us scale evidence-based programs
                   in underserved communities.
@@ -267,13 +267,13 @@ export function Programs({ mode = "home" }: ProgramsProps) {
                 <div className="flex flex-wrap gap-3">
                   <a
                     href="/#contact"
-                    className="px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-black transition-colors"
+                    className="w-full sm:w-auto text-center px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-black transition-colors"
                   >
                     Become a Program Partner
                   </a>
                   <a
                     href="/about"
-                    className="px-6 py-3 bg-white text-gray-900 rounded-lg font-semibold border border-gray-300 hover:bg-gray-50 transition-colors"
+                    className="w-full sm:w-auto text-center px-6 py-3 bg-white text-gray-900 rounded-lg font-semibold border border-gray-300 hover:bg-gray-50 transition-colors"
                   >
                     Learn About OELOFSA
                   </a>

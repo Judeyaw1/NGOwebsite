@@ -45,7 +45,7 @@ export function Stories({ mode = "home" }: StoriesProps) {
   ];
 
   return (
-    <section id="stories" className="py-20 bg-gray-50 border-t border-gray-100">
+    <section id="stories" className="py-14 sm:py-20 bg-gray-50 border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {!isPage && (
           <>
@@ -56,10 +56,10 @@ export function Stories({ mode = "home" }: StoriesProps) {
               viewport={{ once: true }}
               className="text-center mb-16"
             >
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                 Stories of Transformation
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto">
                 Meet some of the incredible individuals whose lives have been changed
                 through our programs and support.
               </p>
@@ -73,7 +73,7 @@ export function Stories({ mode = "home" }: StoriesProps) {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.2 }}
                   viewport={{ once: true }}
-                  className="bg-white p-8 rounded-xl shadow-lg"
+                  className="bg-white p-6 sm:p-8 rounded-xl shadow-lg"
                 >
                   <Quote className="w-10 h-10 text-yellow-400 mb-4" />
                   <p className="text-gray-600 mb-6 leading-relaxed italic">
@@ -102,13 +102,13 @@ export function Stories({ mode = "home" }: StoriesProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
-              className="rounded-3xl bg-gradient-to-br from-slate-900 via-gray-900 to-amber-900 text-white p-8 md:p-12 mb-10"
+              className="rounded-3xl bg-gradient-to-br from-slate-900 via-gray-900 to-amber-900 text-white p-6 sm:p-8 md:p-12 mb-10"
             >
               <p className="text-xs uppercase tracking-[0.2em] text-amber-200 mb-4">Stories</p>
-              <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
                 Real People, Real Progress
               </h2>
-              <p className="text-amber-50 max-w-3xl text-lg leading-relaxed">
+              <p className="text-amber-50 max-w-3xl text-base sm:text-lg leading-relaxed">
                 Behind every number is a person whose opportunities expanded through
                 education, support, and community partnership.
               </p>
@@ -119,18 +119,18 @@ export function Stories({ mode = "home" }: StoriesProps) {
                 <img
                   src={featuredStory.image}
                   alt={featuredStory.name}
-                  className="w-full h-72 object-cover"
+                  className="w-full h-60 sm:h-72 object-cover"
                 />
-                <div className="p-8">
+                <div className="p-6 sm:p-8">
                   <p className="text-sm font-semibold text-amber-700 mb-2">Featured Story</p>
-                  <h3 className="text-3xl font-bold text-gray-900 mb-2">{featuredStory.name}</h3>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">{featuredStory.name}</h3>
                   <p className="text-gray-500 mb-4">{featuredStory.role}</p>
                   <p className="text-gray-700 leading-relaxed text-lg">"{featuredStory.quote}"</p>
                 </div>
               </div>
 
-              <div className="lg:col-span-5 bg-gray-900 text-white rounded-2xl p-8">
-                <h4 className="text-2xl font-bold mb-5">What These Stories Show</h4>
+              <div className="lg:col-span-5 bg-gray-900 text-white rounded-2xl p-6 sm:p-8">
+                <h4 className="text-xl sm:text-2xl font-bold mb-5">What These Stories Show</h4>
                 <div className="space-y-4">
                   {outcomes.map((item) => (
                     <div key={item} className="flex gap-3 items-start">
@@ -150,7 +150,7 @@ export function Stories({ mode = "home" }: StoriesProps) {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-white border border-gray-200 rounded-2xl p-7"
+                  className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-7"
                 >
                   <Quote className="w-8 h-8 text-yellow-500 mb-3" />
                   <p className="text-gray-700 leading-relaxed italic mb-6">"{testimonial.quote}"</p>
@@ -176,18 +176,18 @@ export function Stories({ mode = "home" }: StoriesProps) {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="mt-10 bg-gradient-to-r from-black to-yellow-700 rounded-2xl p-12 text-center"
+          className="mt-10 bg-gradient-to-r from-black to-yellow-700 rounded-2xl p-6 sm:p-8 md:p-12 text-center"
         >
-          <h3 className="text-3xl font-bold text-white mb-4">
+          <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
             Help Us Create More Success Stories
           </h3>
-          <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-blue-100 text-base sm:text-lg mb-8 max-w-2xl mx-auto">
             Your support can help transform the life of a student in Nigeria. Every
             contribution makes a difference.
           </p>
           <a
             href="/donate"
-            className="inline-block px-8 py-4 bg-yellow-400 text-white hover:bg-yellow-500 font-semibold rounded-lg transition-colors"
+            className="inline-block w-full sm:w-auto px-8 py-4 bg-yellow-400 text-white hover:bg-yellow-500 font-semibold rounded-lg transition-colors"
           >
             Support A Student
           </a>

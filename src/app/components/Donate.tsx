@@ -32,27 +32,27 @@ export function Donate() {
   ];
 
   return (
-    <section className="py-20 bg-gray-50 border-t border-gray-100">
+    <section className="py-14 sm:py-20 bg-gray-50 border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="rounded-3xl bg-gradient-to-br from-slate-900 via-gray-900 to-amber-900 text-white p-8 md:p-12 mb-10"
+          className="rounded-3xl bg-gradient-to-br from-slate-900 via-gray-900 to-amber-900 text-white p-6 sm:p-8 md:p-12 mb-10"
         >
           <p className="text-xs uppercase tracking-[0.2em] text-amber-200 mb-4">Donate</p>
-          <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
             Support OELOFSA Through Zelle
           </h2>
-          <p className="text-amber-50 max-w-3xl text-lg leading-relaxed">
+          <p className="text-amber-50 max-w-3xl text-base sm:text-lg leading-relaxed">
             Your donation helps fund scholarships, learning resources, and
             humanitarian support for underserved communities in Nigeria.
           </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-12 gap-8 mb-10">
-          <div className="lg:col-span-7 bg-white border border-gray-200 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">How To Donate (Zelle)</h3>
+          <div className="lg:col-span-7 bg-white border border-gray-200 rounded-2xl p-6 sm:p-8">
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">How To Donate (Zelle)</h3>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <div className="w-7 h-7 rounded-full bg-blue-100 text-blue-700 text-sm font-semibold flex items-center justify-center mt-0.5">1</div>
@@ -61,7 +61,7 @@ export function Donate() {
               <div className="flex items-start gap-3">
                 <div className="w-7 h-7 rounded-full bg-blue-100 text-blue-700 text-sm font-semibold flex items-center justify-center mt-0.5">2</div>
                 <p className="text-gray-700">
-                  Send to this email: <span className="font-semibold">{ZELLE_EMAIL}</span>
+                  Send to this email: <span className="font-semibold break-all">{ZELLE_EMAIL}</span>
                 </p>
               </div>
               <div className="flex items-start gap-3">
@@ -73,22 +73,22 @@ export function Donate() {
             <div className="mt-8 flex flex-wrap gap-3">
               <button
                 onClick={copyZelleEmail}
-                className="px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-black transition-colors inline-flex items-center gap-2"
+                className="w-full sm:w-auto px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-black transition-colors inline-flex items-center justify-center gap-2"
               >
                 <Copy className="w-4 h-4" />
                 {copied ? "Copied" : "Copy Zelle Email"}
               </button>
               <a
                 href="/contact"
-                className="px-6 py-3 bg-yellow-400 text-white rounded-lg font-semibold hover:bg-yellow-500 transition-colors"
+                className="w-full sm:w-auto text-center px-6 py-3 bg-yellow-400 text-white rounded-lg font-semibold hover:bg-yellow-500 transition-colors"
               >
                 Contact for Large Donation
               </a>
             </div>
           </div>
 
-          <div className="lg:col-span-5 rounded-2xl bg-slate-900 text-white p-8">
-            <h4 className="text-2xl font-bold mb-5">Donation Guidance</h4>
+          <div className="lg:col-span-5 rounded-2xl bg-slate-900 text-white p-6 sm:p-8">
+            <h4 className="text-xl sm:text-2xl font-bold mb-5">Donation Guidance</h4>
             <div className="space-y-4">
               {notes.map((note) => (
                 <div key={note} className="flex gap-3 items-start">
@@ -110,8 +110,8 @@ export function Donate() {
           </div>
         </div>
 
-        <div className="bg-white border border-gray-200 rounded-2xl p-8">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6">Giving Levels</h3>
+        <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8">
+          <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Giving Levels</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {givingTiers.map((tier) => (
               <div key={tier.amount} className="rounded-xl border border-gray-200 p-5 bg-gray-50">

@@ -1,4 +1,4 @@
-import { Heart, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import logo from "../../assets/c98273e8235816fbf095c3442badfd44f858eb30.png";
 
@@ -8,18 +8,18 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2">
-            <img src={logo} alt="OELOFSA Logo" className="w-12 h-12 rounded-full" />
+            <img src={logo} alt="OELOFSA Logo" className="w-10 h-10 sm:w-12 sm:h-12 rounded-full" />
             <div>
-              <h1 className="font-bold text-gray-900">OELOFSA</h1>
-              <p className="text-xs text-gray-600">Empowering Communities</p>
+              <h1 className="font-bold text-gray-900 text-sm sm:text-base">OELOFSA</h1>
+              <p className="hidden sm:block text-xs text-gray-600">Empowering Communities</p>
             </div>
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
             <a href="/about" className="text-gray-700 hover:text-black transition-colors">
               About
             </a>
@@ -42,7 +42,7 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="lg:hidden p-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? (
@@ -56,8 +56,8 @@ export function Header() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200">
-          <div className="px-4 py-4 space-y-3">
+        <div className="lg:hidden bg-white border-t border-gray-200">
+          <div className="px-4 py-4 space-y-3 max-h-[calc(100vh-4rem)] overflow-y-auto">
             <a
               href="/about"
               className="block py-2 text-gray-700 hover:text-blue-600 transition-colors"

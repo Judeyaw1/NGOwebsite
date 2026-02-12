@@ -80,7 +80,7 @@ export function About({ mode = "home" }: AboutProps) {
   const isPage = mode === "page";
 
   return (
-    <section id="about" className="py-20 bg-gray-50 border-t border-gray-100">
+    <section id="about" className="py-14 sm:py-20 bg-gray-50 border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <motion.div
@@ -89,25 +89,25 @@ export function About({ mode = "home" }: AboutProps) {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
               Women Empowering Women Across Nigeria
             </h2>
-            <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+            <p className="text-gray-600 mb-6 text-base sm:text-lg leading-relaxed">
               OELOFSA (National Ladies of Enugu State Association) is a women-owned non-profit organization founded with a
               simple yet powerful vision: to provide educational opportunities and
               essential aid to underserved communities throughout Nigeria.
             </p>
-            <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+            <p className="text-gray-600 mb-6 text-base sm:text-lg leading-relaxed">
               Founded by Nigerian women who understand the transformative power of
               education firsthand, we work tirelessly to break down barriers and create
               pathways to success for the next generation.
             </p>
-            <p className="text-gray-600 text-lg leading-relaxed mb-8">
+            <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-8">
               From scholarship programs to school infrastructure improvements, from
               educational materials to mentorship initiatives, we're building a brighter
               future one student at a time.
             </p>
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="rounded-xl bg-white border border-gray-200 p-4 text-center">
                 <p className="text-2xl font-bold text-gray-900">500+</p>
                 <p className="text-xs text-gray-600">Scholarships</p>
@@ -135,8 +135,8 @@ export function About({ mode = "home" }: AboutProps) {
               alt="Community support"
               className="rounded-2xl shadow-2xl"
             />
-            <div className="absolute -bottom-6 -left-6 bg-yellow-500 text-white p-6 rounded-xl shadow-xl">
-              <p className="text-4xl font-bold mb-1">8+</p>
+            <div className="absolute -bottom-4 left-4 sm:-bottom-6 sm:-left-6 bg-yellow-500 text-white p-4 sm:p-6 rounded-xl shadow-xl">
+              <p className="text-3xl sm:text-4xl font-bold mb-1">8+</p>
               <p className="text-sm">Years of Impact</p>
             </div>
           </motion.div>
@@ -151,7 +151,7 @@ export function About({ mode = "home" }: AboutProps) {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+              className="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
             >
               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                 <value.icon className="w-6 h-6 text-blue-600" />
@@ -166,7 +166,7 @@ export function About({ mode = "home" }: AboutProps) {
           <>
             {/* Pillars */}
             <div className="mb-16">
-              <h3 className="text-3xl font-bold text-gray-900 mb-6 text-center">What We Do</h3>
+              <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">What We Do</h3>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {pillars.map((pillar, index) => (
                   <motion.div
@@ -188,7 +188,7 @@ export function About({ mode = "home" }: AboutProps) {
             {/* Process + Trust */}
             <div className="grid lg:grid-cols-2 gap-8 mb-16">
               <div className="bg-white rounded-2xl p-8 border border-gray-200">
-                <h3 className="text-2xl font-bold text-gray-900 mb-5">How We Work</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-5">How We Work</h3>
                 <div className="space-y-4">
                   {process.map((item, idx) => (
                     <div key={item} className="flex gap-3">
@@ -202,7 +202,7 @@ export function About({ mode = "home" }: AboutProps) {
               </div>
 
               <div className="bg-blue-900 rounded-2xl p-8 text-white">
-                <h3 className="text-2xl font-bold mb-5">Why Communities Trust Us</h3>
+                <h3 className="text-xl sm:text-2xl font-bold mb-5">Why Communities Trust Us</h3>
                 <div className="space-y-4">
                   {trustPoints.map((point) => (
                     <div key={point} className="flex items-start gap-3">
@@ -226,13 +226,13 @@ export function About({ mode = "home" }: AboutProps) {
               <div className="flex flex-wrap gap-3">
                 <a
                   href="/#contact"
-                  className="px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-black transition-colors"
+                  className="w-full sm:w-auto text-center px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-black transition-colors"
                 >
                   Partner With OELOFSA
                 </a>
                 <a
                   href="/#programs"
-                  className="px-6 py-3 bg-white text-gray-900 rounded-lg font-semibold border border-gray-300 hover:bg-gray-50 transition-colors"
+                  className="w-full sm:w-auto text-center px-6 py-3 bg-white text-gray-900 rounded-lg font-semibold border border-gray-300 hover:bg-gray-50 transition-colors"
                 >
                   Explore Programs
                 </a>

@@ -165,19 +165,22 @@ export function Programs({ mode = "home" }: ProgramsProps) {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-8">
                 <div className="rounded-xl bg-white/10 border border-white/20 p-4">
                   <p className="text-xl sm:text-2xl font-bold">6+</p>
-                  <p className="text-xs text-blue-100">Scholarships</p>
+                  <p className="text-xs text-blue-100">Scholarships Awarded</p>
+                  <p className="text-xs text-cyan-200 mt-1">+4 this year</p>
                 </div>
                 <div className="rounded-xl bg-white/10 border border-white/20 p-4">
                   <p className="text-xl sm:text-2xl font-bold">17+</p>
                   <p className="text-xs text-blue-100">Schools Supported</p>
+                  <p className="text-xs text-cyan-200 mt-1">+6 this year</p>
                 </div>
                 <div className="rounded-xl bg-white/10 border border-white/20 p-4">
                   <p className="text-xl sm:text-2xl font-bold">100+</p>
-                  <p className="text-xs text-blue-100">Families Reached</p>
+                  <p className="text-xs text-blue-100">Lives Impacted</p>
+                  <p className="text-xs text-cyan-200 mt-1">+50 this year</p>
                 </div>
                 <div className="rounded-xl bg-white/10 border border-white/20 p-4">
-                  <p className="text-xl sm:text-2xl font-bold">1,000+</p>
-                  <p className="text-xs text-blue-100">Youth Trained</p>
+                  <p className="text-xl sm:text-2xl font-bold">$120+</p>
+                  <p className="text-xs text-blue-100">Aid Distributed</p>
                 </div>
               </div>
             </motion.div>

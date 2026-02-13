@@ -10,7 +10,7 @@ export function Impact({ mode = "home" }: ImpactProps) {
     { number: "6+", label: "Scholarships Awarded", trend: "+4 this year" },
     { number: "17+", label: "Schools Supported", trend: "+6 this year" },
     { number: "100+", label: "Lives Impacted", trend: "+50 this year" },
-    { number: "$120+", label: "Aid Distributed", trend: "+60 this year" },
+    { number: "$120+", label: "Aid Distributed" },
   ];
 
   const isPage = mode === "page";
@@ -67,10 +67,12 @@ export function Impact({ mode = "home" }: ImpactProps) {
             >
               <p className="text-4xl sm:text-5xl font-bold text-white mb-2">{stat.number}</p>
               <p className="text-blue-100 mb-3 text-base sm:text-lg">{stat.label}</p>
-              <div className="flex items-center justify-center gap-1 text-sm text-yellow-300">
-                <TrendingUp className="w-4 h-4" />
-                <span>{stat.trend}</span>
-              </div>
+              {stat.trend && (
+                <div className="flex items-center justify-center gap-1 text-sm text-yellow-300">
+                  <TrendingUp className="w-4 h-4" />
+                  <span>{stat.trend}</span>
+                </div>
+              )}
             </motion.div>
           ))}
         </div>

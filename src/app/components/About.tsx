@@ -108,16 +108,19 @@ export function About({ mode = "home" }: AboutProps) {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="rounded-xl bg-white border border-gray-200 p-4 text-center">
-                <p className="text-2xl font-bold text-gray-900">50+</p>
-                <p className="text-xs text-gray-600">Scholarships</p>
+                <p className="text-2xl font-bold text-gray-900">6+</p>
+                <p className="text-xs text-gray-600">Scholarships Awarded</p>
+                <p className="text-xs text-blue-700 mt-1">+4 this year</p>
               </div>
               <div className="rounded-xl bg-white border border-gray-200 p-4 text-center">
-                <p className="text-2xl font-bold text-gray-900">5+</p>
+                <p className="text-2xl font-bold text-gray-900">17+</p>
                 <p className="text-xs text-gray-600">Schools Supported</p>
+                <p className="text-xs text-blue-700 mt-1">+6 this year</p>
               </div>
               <div className="rounded-xl bg-white border border-gray-200 p-4 text-center">
-                <p className="text-2xl font-bold text-gray-900">25+</p>
-                <p className="text-xs text-gray-600">Years of Impact</p>
+                <p className="text-2xl font-bold text-gray-900">100+</p>
+                <p className="text-xs text-gray-600">Lives Impacted</p>
+                <p className="text-xs text-blue-700 mt-1">+50 this year</p>
               </div>
             </div>
           </motion.div>

@@ -1,6 +1,7 @@
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
+import { AboutGallery } from "./components/AboutGallery";
 import { Programs } from "./components/Programs";
 import { Impact } from "./components/Impact";
 import { Stories } from "./components/Stories";
@@ -11,6 +12,7 @@ import { Footer } from "./components/Footer";
 export default function App() {
   const path = typeof window !== "undefined" ? window.location.pathname : "/";
   const isAboutPage = path === "/about";
+  const isAboutGalleryPage = path === "/about/gallery";
   const isProgramsPage = path === "/programs";
   const isImpactPage = path === "/impact";
   const isStoriesPage = path === "/stories";
@@ -20,7 +22,11 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      {isAboutPage ? (
+      {isAboutGalleryPage ? (
+        <main className="pt-16 sm:pt-20">
+          <AboutGallery />
+        </main>
+      ) : isAboutPage ? (
         <main className="pt-16 sm:pt-20">
           <About mode="page" />
         </main>

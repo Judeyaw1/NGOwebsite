@@ -13,7 +13,7 @@ export function Stories({ mode = "home" }: StoriesProps) {
       image:
         "https://images.unsplash.com/photo-1670422602252-3e2d7d71d663?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxOaWdlcmlhbiUyMHdvbWFuJTIwc3R1ZGVudCUyMGVkdWNhdGlvbnxlbnwxfHx8fDE3NzA4NzEwOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       quote:
-        "The scholarship from OELOFSA changed my life completely. As the first in my family to attend university, I'm now studying medicine and will return to serve my community as a doctor.",
+        "The scholarship support I received changed my path completely. It gave me the confidence and resources to continue my university education and support my family.",
     },
     {
       name: "Amara Nwosu",
@@ -21,7 +21,7 @@ export function Stories({ mode = "home" }: StoriesProps) {
       image:
         "https://images.unsplash.com/photo-1610626295085-aa8d6ae8daec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxBZnJpY2FuJTIwd29tZW4lMjBlbXBvd2VybWVudHxlbnwxfHx8fDE3NzA4NzEwOTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       quote:
-        "I received a scholarship in 2018, graduated with honors, and now I teach at the same school where I grew up. I want to inspire the next generation just like OELOFSA inspired me.",
+        "I benefited from educational support and now I give back through community service. OELOESA's encouragement helped me stay focused and committed.",
     },
     {
       name: "Ngozi Adeyemi",
@@ -29,7 +29,7 @@ export function Stories({ mode = "home" }: StoriesProps) {
       image:
         "https://images.unsplash.com/photo-1670422602252-3e2d7d71d663?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxOaWdlcmlhbiUyMHdvbWFuJTIwc3R1ZGVudCUyMGVkdWNhdGlvbnxlbnwxfHx8fDE3NzA4NzEwOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       quote:
-        "Thanks to the vocational training program, I learned to code and now work remotely for an international tech company. I'm supporting my entire family and giving back to the organization.",
+        "When my family faced health and financial hardship, community assistance made a real difference. I now volunteer to support others the same way.",
     },
   ];
 

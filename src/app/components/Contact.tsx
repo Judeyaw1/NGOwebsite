@@ -93,9 +93,7 @@ export function Contact({ mode = "home" }: ContactProps) {
                 <div>
                   <p className="font-semibold text-gray-900 mb-1">Our Office</p>
                   <p className="text-gray-600">
-                    123 Unity Road, Victoria Island
-                    <br />
-                    Lagos, Nigeria
+                    Coming soon
                   </p>
                 </div>
               </div>
@@ -106,8 +104,8 @@ export function Contact({ mode = "home" }: ContactProps) {
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900 mb-1">Phone</p>
-                  <p className="text-gray-600">+234 (0) 123 456 7890</p>
-                  <p className="text-gray-600 text-sm">Mon-Fri 9am-5pm WAT</p>
+                  <p className="text-gray-600">+1(240)898-6759</p>
+                  
                 </div>
               </div>
 
@@ -117,7 +115,7 @@ export function Contact({ mode = "home" }: ContactProps) {
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900 mb-1">Email</p>
-                  <p className="text-gray-600">info@oelofsa.org</p>
+                  <p className="text-gray-600">oeloesainc@gmail.com</p>
                   <p className="text-gray-600">partnerships@oelofsa.org</p>
                 </div>
               </div>

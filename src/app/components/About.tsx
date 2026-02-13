@@ -9,6 +9,7 @@ import {
   Building2,
   CheckCircle2,
 } from "lucide-react";
+import whoWeAreImage from "../../assets/work-7.jpg";
 
 type AboutProps = {
   mode?: "home" | "page";
@@ -20,19 +21,19 @@ export function About({ mode = "home" }: AboutProps) {
       icon: Target,
       title: "Our Mission",
       description:
-        "To empower Nigerian communities through accessible education, scholarships, and sustainable development programs led by women for women.",
+        "To promote the social, cultural, educational, civic, and general well-being of indigenes of Enugu State, Nigeria, particularly disenfranchised groups within the state, Association members, and members of the Enugu state community in the Americas.",
     },
     {
       icon: Users,
       title: "Our Community",
       description:
-        "A network of passionate women leaders, educators, and volunteers committed to creating lasting change in local Nigerian communities.",
+        "Members are daughters of Enugu by birth or by marriage to an Enugu man, united to educate, encourage, and empower our community.",
     },
     {
       icon: Award,
       title: "Our Impact",
       description:
-        "Over 10 scholarships awarded, 10+ schools supported, and thousands of lives transformed through education and aid programs.",
+        "Since 2000, OELOESA has brought indigenous women together to support the less privileged through sustained community service.",
     },
   ];
 
@@ -90,22 +91,20 @@ export function About({ mode = "home" }: AboutProps) {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-              Women Empowering Women Across Nigeria
+              Who We Are
             </h2>
             <p className="text-gray-600 mb-6 text-base sm:text-lg leading-relaxed">
-              OELOFSA (National Ladies of Enugu State Association) is a women-owned non-profit organization founded with a
-              simple yet powerful vision: to provide educational opportunities and
-              essential aid to underserved communities throughout Nigeria.
+              The Original Exclusive Ladies of Enugu State Association, Mid-Atlantic
+              (OELOESA), is a 501(c)(3) non-profit association that has been making a
+              difference since 2000 and brings indigenous women together to help the
+              less privileged.
             </p>
             <p className="text-gray-600 mb-6 text-base sm:text-lg leading-relaxed">
-              Founded by Nigerian women who understand the transformative power of
-              education firsthand, we work tirelessly to break down barriers and create
-              pathways to success for the next generation.
+              Members are either daughters of Enugu by birth or by marriage to an
+              Enugu man. We educate, encourage, and empower our community.
             </p>
             <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-8">
-              From scholarship programs to school infrastructure improvements, from
-              educational materials to mentorship initiatives, we're building a brighter
-              future one student at a time.
+              We are very grateful for our husbands. They are our earthly "Solid Rock."
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="rounded-xl bg-white border border-gray-200 p-4 text-center">
@@ -117,7 +116,7 @@ export function About({ mode = "home" }: AboutProps) {
                 <p className="text-xs text-gray-600">Schools Supported</p>
               </div>
               <div className="rounded-xl bg-white border border-gray-200 p-4 text-center">
-                <p className="text-2xl font-bold text-gray-900">2+</p>
+                <p className="text-2xl font-bold text-gray-900">25+</p>
                 <p className="text-xs text-gray-600">Years of Impact</p>
               </div>
             </div>
@@ -131,12 +130,12 @@ export function About({ mode = "home" }: AboutProps) {
             className="relative"
           >
             <img
-              src="https://images.unsplash.com/photo-1764670274687-ab62458d6306?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxBZnJpY2FuJTIwY29tbXVuaXR5JTIwd29tZW4lMjBoZWxwaW5nfGVufDF8fHx8MTc3MDg3MTA5M3ww&ixlib=rb-4.1.0&q=80&w=1080"
+              src={whoWeAreImage}
               alt="Community support"
               className="rounded-2xl shadow-2xl"
             />
             <div className="absolute -bottom-4 left-4 sm:-bottom-6 sm:-left-6 bg-yellow-500 text-white p-4 sm:p-6 rounded-xl shadow-xl">
-              <p className="text-3xl sm:text-4xl font-bold mb-1">8+</p>
+              <p className="text-3xl sm:text-4xl font-bold mb-1">25+</p>
               <p className="text-sm">Years of Impact</p>
             </div>
           </motion.div>
@@ -228,7 +227,13 @@ export function About({ mode = "home" }: AboutProps) {
                   href="/#contact"
                   className="w-full sm:w-auto text-center px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-black transition-colors"
                 >
-                  Partner With OELOFSA
+                  Partner With OELOESA
+                </a>
+                <a
+                  href="/about/gallery"
+                  className="w-full sm:w-auto text-center px-6 py-3 bg-blue-900 text-white rounded-lg font-semibold hover:bg-blue-950 transition-colors"
+                >
+                  View Members & Work Gallery
                 </a>
                 <a
                   href="/#programs"

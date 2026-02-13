@@ -24,7 +24,7 @@ export function Hero() {
           >
             <div className="inline-block px-4 py-2 bg-yellow-400/20 border border-yellow-400/30 rounded-full mb-6">
               <span className="text-yellow-300 text-sm font-medium">
-                Women-Owned • Nigerian-Focused
+                501(c)(3) • Since 2000
               </span>
             </div>
           </motion.div>
@@ -35,7 +35,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-3xl sm:text-5xl lg:text-7xl font-bold text-white mb-6"
           >
-            Empowering Nigerian Communities Through Education
+            OELOESA Mid-Atlantic Serving Enugu Communities with Compassion
           </motion.h1>
 
           <motion.p
@@ -44,9 +44,9 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-base sm:text-xl text-gray-200 mb-8 leading-relaxed"
           >
-            National Ladies of Enugu State Association (OELOFSA) - A women-owned NGO dedicated to providing scholarships, educational
-            resources, and humanitarian aid to local communities in Nigeria. Together,
-            we're building a brighter future.
+            The Original Exclusive Ladies of Enugu State Association, Mid-Atlantic
+            (OELOESA), brings indigenous women together to support the less privileged
+            through scholarships, humanitarian aid, community outreach, and civic action.
           </motion.p>
 
           <motion.div

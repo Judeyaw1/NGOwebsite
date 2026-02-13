@@ -11,15 +11,15 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src={logo} alt="OELOFSA Logo" className="w-10 h-10 rounded-full" />
+              <img src={logo} alt="OELOESA Logo" className="w-10 h-10 rounded-full" />
               <div>
-                <h3 className="font-bold text-white">OELOFSA</h3>
-                <p className="text-xs text-gray-400">Empowering Communities</p>
+                <h3 className="font-bold text-white">OELOESA</h3>
+                <p className="text-xs text-gray-400">Educate • Encourage • Empower</p>
               </div>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
-              National Ladies of Enugu State Association - A women-owned NGO empowering Nigerian communities through education,
-              scholarships, and humanitarian aid.
+              The Original Exclusive Ladies of Enugu State Association, Mid-Atlantic
+              (OELOESA), a 501(c)(3) non-profit supporting the less privileged since 2000.
             </p>
           </div>
 
@@ -147,7 +147,7 @@ export function Footer() {
         <div className="pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
             <p className="text-gray-400">
-              © {currentYear} OELOFSA. All rights reserved | JoseSolution.
+              © {currentYear} OELOESA. All rights reserved | JoseSolution.
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">

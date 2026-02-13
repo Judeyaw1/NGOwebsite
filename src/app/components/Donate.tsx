@@ -42,11 +42,11 @@ export function Donate() {
         >
           <p className="text-xs uppercase tracking-[0.2em] text-amber-200 mb-4">Donate</p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
-            Support OELOFSA Through Zelle
+            Support OELOESA Through Zelle
           </h2>
           <p className="text-amber-50 max-w-3xl text-base sm:text-lg leading-relaxed">
-            Your donation helps fund scholarships, learning resources, and
-            humanitarian support for underserved communities in Nigeria.
+            Your donation helps fund scholarships, humanitarian outreach,
+            medical mission support, and community assistance for the less privileged.
           </p>
         </motion.div>
 

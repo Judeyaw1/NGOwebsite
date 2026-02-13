@@ -7,19 +7,20 @@ type ImpactProps = {
 
 export function Impact({ mode = "home" }: ImpactProps) {
   const stats = [
-    { number: "10+", label: "Scholarships Awarded", trend: "+50 this year" },
-    { number: "12+", label: "Schools Supported", trend: "+4 this year" },
-    { number: "100+", label: "Lives Impacted", trend: "+250 this year" },
-    { number: "$2k+", label: "Aid Distributed", trend: "+$5K this year" },
+    { number: "6+", label: "Scholarships Awarded", trend: "+4 this year" },
+    { number: "17+", label: "Schools Supported", trend: "+6 this year" },
+    { number: "100+", label: "Lives Impacted", trend: "+50 this year" },
+    { number: "$120+", label: "Aid Distributed", trend: "+60 this year" },
   ];
 
   const isPage = mode === "page";
 
-  const yearlyHighlights = [
-    "Expanded scholarship coverage to additional rural communities",
-    "Added digital learning support in schools with limited resources",
-    "Strengthened mentorship outcomes for girls entering STEM pathways",
-    "Increased rapid-response humanitarian support for vulnerable families",
+  const attainments = [
+    "We have renovated and built the Mother of Christ Motherless Babies' Home in Enugu, providing shelter, food, clothing, and other essential needs.",
+    "OELOESA has awarded scholarships to 17 university students in need and with good academic standards from the University of Nigeria, Nsukka (UNN), and the Enugu State University of Science and Technology (ESUT).",
+    "OELOESA, by itself and with our National Board, the EnuguUSA team, travels with surgeons, diagnoses, provides medical supplies, treats, medicates, and puts smiles on people in need. We have given financially to EnuguUSA.",
+    "OELOESA engaged in Operation Help the Villagers, in which members financially assisted widows, paid school fees, provided school supplies, paid hospital bills, reconstructed school buildings, and assisted many less privileged people in need.",
+    "OELOESA donates to St. Jude Children's Hospital to help with children's treatment, gives yearly to EnuguUSA, and supports the Bowie Interfaith and Emergency Aid Fund.",
   ];
 
   const measurementPrinciples = [
@@ -119,9 +120,9 @@ export function Impact({ mode = "home" }: ImpactProps) {
         {isPage && (
           <div className="mt-16 grid lg:grid-cols-2 gap-8">
             <div className="bg-white text-gray-900 rounded-2xl p-6 sm:p-8">
-              <h3 className="text-xl sm:text-2xl font-bold mb-5">This Year’s Highlights</h3>
+              <h3 className="text-xl sm:text-2xl font-bold mb-5">Attainments</h3>
               <div className="space-y-4">
-                {yearlyHighlights.map((item) => (
+                {attainments.map((item) => (
                   <div key={item} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 mt-0.5" />
                     <p className="leading-relaxed">{item}</p>

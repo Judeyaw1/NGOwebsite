@@ -19,49 +19,49 @@ export function Programs({ mode = "home" }: ProgramsProps) {
       icon: GraduationCap,
       title: "Scholarship Program",
       description:
-        "Full and partial scholarships for exceptional students from underserved communities. Covering tuition, books, and living expenses.",
+        "Scholarship support for deserving students with strong academic standards, including beneficiaries from UNN and ESUT.",
       color: "emerald",
-      stats: "500+ Scholarships",
+      stats: "17 Students Awarded",
     },
     {
       icon: BookOpen,
       title: "Educational Resources",
       description:
-        "Providing textbooks, digital learning tools, and supplies to schools across Nigeria. Building libraries and computer labs.",
+        "Payment of school fees, provision of school supplies, and support for better learning environments in underserved areas.",
       color: "blue",
-      stats: "50+ Schools Supported",
+      stats: "Direct School Support",
     },
     {
       icon: HandHeart,
       title: "Humanitarian Aid",
       description:
-        "Emergency relief, food programs, and healthcare support for families in need. Responding to crises with compassion.",
+        "Support for widows and less privileged families through financial aid, hospital bill payments, food, clothing, and shelter support.",
       color: "rose",
-      stats: "10,000+ Families Helped",
+      stats: "Operation Help the Villagers",
     },
     {
       icon: Users,
       title: "Mentorship Network",
       description:
-        "Connecting students with successful professionals and role models. Guidance for academic and career development.",
+        "Community encouragement and guidance that helps young people and families stay connected to opportunities and hope.",
       color: "purple",
-      stats: "200+ Active Mentors",
+      stats: "Community-Centered Support",
     },
     {
       icon: Building,
       title: "Infrastructure Development",
       description:
-        "Building and renovating schools, installing solar panels, and improving learning environments in rural areas.",
+        "Renovation and construction support, including work on the Mother of Christ Motherless Babies' Home in Enugu.",
       color: "orange",
-      stats: "25+ Projects Completed",
+      stats: "Shelter & Care Initiatives",
     },
     {
       icon: Briefcase,
       title: "Vocational Training",
       description:
-        "Skills development programs in technology, entrepreneurship, and trades. Empowering economic independence.",
+        "Medical outreach support with surgeons and partners, treatment logistics, and essential supplies for people in need.",
       color: "indigo",
-      stats: "1,000+ Trained",
+      stats: "Medical Mission Support",
     },
   ];
 
@@ -106,8 +106,8 @@ export function Programs({ mode = "home" }: ProgramsProps) {
             >
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Our Programs</h2>
               <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto">
-                Comprehensive initiatives designed to create lasting change in Nigerian
-                communities through education, aid, and empowerment.
+                Practical service tracks rooted in OELOESA's mission to promote social,
+                cultural, educational, civic, and general well-being.
               </p>
             </motion.div>
 
@@ -158,20 +158,21 @@ export function Programs({ mode = "home" }: ProgramsProps) {
                 Practical Programs That Move Communities Forward
               </h2>
               <p className="text-blue-100 max-w-3xl text-base sm:text-lg leading-relaxed">
-                Each OELOFSA program is designed with local stakeholders, delivered through
-                trusted partnerships, and measured for real outcomes.
+                Each OELOESA program is community-focused, partnership-driven, and
+                designed to improve life for disenfranchised groups in Enugu State and
+                the broader Enugu community in the Americas.
               </p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-8">
                 <div className="rounded-xl bg-white/10 border border-white/20 p-4">
-                  <p className="text-xl sm:text-2xl font-bold">500+</p>
+                  <p className="text-xl sm:text-2xl font-bold">6+</p>
                   <p className="text-xs text-blue-100">Scholarships</p>
                 </div>
                 <div className="rounded-xl bg-white/10 border border-white/20 p-4">
-                  <p className="text-xl sm:text-2xl font-bold">50+</p>
+                  <p className="text-xl sm:text-2xl font-bold">17+</p>
                   <p className="text-xs text-blue-100">Schools Supported</p>
                 </div>
                 <div className="rounded-xl bg-white/10 border border-white/20 p-4">
-                  <p className="text-xl sm:text-2xl font-bold">10,000+</p>
+                  <p className="text-xl sm:text-2xl font-bold">100+</p>
                   <p className="text-xs text-blue-100">Families Reached</p>
                 </div>
                 <div className="rounded-xl bg-white/10 border border-white/20 p-4">
@@ -275,7 +276,7 @@ export function Programs({ mode = "home" }: ProgramsProps) {
                     href="/about"
                     className="w-full sm:w-auto text-center px-6 py-3 bg-white text-gray-900 rounded-lg font-semibold border border-gray-300 hover:bg-gray-50 transition-colors"
                   >
-                    Learn About OELOFSA
+                    Learn About OELOESA
                   </a>
                 </div>
               </div>
